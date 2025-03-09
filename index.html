@@ -6,7 +6,8 @@
     <title>Folusho Sanni - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="Folusho Sanni - WDD 230 - Web Frontend Development course assignment portal. Learn about web development techniques, projects, and best practices.">
     <meta name="author" content="Folusho Sanni">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
@@ -42,8 +43,7 @@
         <p id="lastModified"></p>
     </footer>
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+      <script src="getDates.js"></script>
     </script>
 </body>
 </html>
