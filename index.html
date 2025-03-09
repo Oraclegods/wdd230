@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folusho Sanni - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Folusho Sanni - WDD 230 - Web Frontend Development course assignment portal. Learn about web development techniques, projects, and best practices.">
+    <meta name="author" content="Folusho Sanni">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Folusho Sanni Profile Photo">
+        <span>Folusho Sanni</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card learning-activities">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <li><a href="#">Activity 3</a></li>
+            </ul>
+        </section>
+        <section class="card information">
+            <h2>Information</h2>
+            <p>Weather: Placeholder</p>
+            <p>Number of Visits: Placeholder</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Folusho Sanni, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+</html>
 
