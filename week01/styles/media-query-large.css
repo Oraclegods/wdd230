@@ -1,1 +1,15 @@
+@media screen and (min-width: 500px) {
+    /* Change header background to black and text color to white */
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    /* Change main to a two-column layout */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+        gap: 10px; /* Optional: adds spacing between columns */
+    }
+}
 
