@@ -1,1 +1,39 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+}
 
+h1, h2 {
+    color: #004080;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Color Scheme */
+.primary {
+    background-color: #004080;
+    color: white;
+}
+
+.secondary {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Layout Styling */
+.color-scheme div {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
