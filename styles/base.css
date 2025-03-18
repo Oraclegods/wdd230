@@ -8,12 +8,19 @@ body {
     text-align: center;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Header */
 header {
     background-color: #004080;
     color: white;
     padding: 1rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; /* Ensures proper alignment */
     align-items: center;
 }
 
@@ -23,6 +30,7 @@ header img {
     border-radius: 50%;
 }
 
+/* Navigation Menu */
 nav {
     background-color: #0059b3;
     padding: 1rem;
@@ -50,6 +58,39 @@ nav a:hover, .active {
     background-color: #002244;
 }
 
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav.show ul {
+        display: flex;
+    }
+}
+
+/* Main Content */
 main {
     max-width: 900px;
     margin: auto;
@@ -64,11 +105,13 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Lists */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* Footer */
 footer {
     background-color: #004080;
     color: white;
