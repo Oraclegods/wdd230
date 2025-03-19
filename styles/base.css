@@ -28,10 +28,11 @@ header {
     color: white;
     padding: 1rem;
     display: flex;
-    justify-content: space-between; /* Ensures proper alignment */
+    justify-content: space-between;
     align-items: center;
 }
 
+/* Profile Image */
 header img {
     width: 100px;
     height: 100px;
@@ -66,9 +67,9 @@ nav a:hover, .active {
     background-color: #002244;
 }
 
-/* Hamburger Button */
-.hamburger {
-    display: none;
+/* Hamburger Menu */
+#menuToggle {
+    display: none; /* Hide by default on larger screens */
     font-size: 24px;
     background: none;
     border: none;
@@ -76,10 +77,10 @@ nav a:hover, .active {
     cursor: pointer;
 }
 
-/* Mobile Menu */
+/* Mobile Navigation */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
+    #menuToggle {
+        display: block; /* Show only on small screens */
     }
 
     nav {
