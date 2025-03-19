@@ -1,1 +1,44 @@
+/* Larger Screen Styles */
+
+@media screen and (min-width: 768px) {
+    /* Header */
+    header {
+        padding: 1.5rem 3rem;
+    }
+    
+    nav ul {
+        gap: 2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 6rem 3rem;
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 1.2rem 2.5rem;
+    }
+    
+    /* Business Spotlights */
+    .spotlights {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 2rem 3rem;
+    }
+    
+    .spotlight {
+        width: 30%;
+    }
+    
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+        text-align: left;
+    }
+}
 
