@@ -8,23 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const navMenu = document.getElementById("navMenu");
 
     menuToggle.addEventListener("click", function () {
-        // Toggle the 'show' class to open/close the menu
         navMenu.classList.toggle("show");
-
-        // Ensure the menu contains list items
-        if (navMenu.innerHTML.trim() === "") {
-            navMenu.innerHTML = `
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            `;
-        }
-
-        // Change the hamburger icon to 'X' when menu is open
         menuToggle.innerHTML = navMenu.classList.contains("show") ? "✖" : "☰";
+    });
+
+    // Close menu when clicking outside (on mobile)
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+            navMenu.classList.remove("show");
+            menuToggle.innerHTML = "☰"; // Reset to hamburger icon
+        }
     });
 
     // Dark Mode Toggle
@@ -34,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     darkModeToggle.addEventListener("click", function () {
         body.classList.toggle("dark-mode");
 
-        // Change the button icon based on mode
+        // Change button icon based on mode
         darkModeToggle.innerHTML = body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
     });
 });
