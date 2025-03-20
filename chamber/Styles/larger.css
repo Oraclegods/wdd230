@@ -1,5 +1,4 @@
 /* Larger Screen Styles */
-
 @media screen and (min-width: 768px) {
     /* Header */
     header {
@@ -24,13 +23,14 @@
     /* Business Spotlights */
     .spotlights {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 2rem;
         padding: 2rem 3rem;
     }
     
     .spotlight {
         width: 30%;
+        padding: 2rem;
     }
     
     /* Footer */
@@ -40,5 +40,10 @@
         padding: 2rem 3rem;
         text-align: left;
     }
+    
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
 }
-
