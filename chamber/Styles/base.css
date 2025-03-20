@@ -60,6 +60,33 @@ nav ul li a {
     padding: 2rem;
 }
 
+/* Grid for Weather and Community Updates */
+.updates-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Grid for Business Spotlights */
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive: Stack elements on smaller screens */
+@media (max-width: 768px) {
+    .updates-grid {
+        grid-template-columns: 1fr; /* Stack weather & updates */
+    }
+    .spotlights {
+        grid-template-columns: 1fr; /* Stack business spotlights */
+    }
+}
+
+
 /* Footer */
 footer {
     background-color: #004080;
