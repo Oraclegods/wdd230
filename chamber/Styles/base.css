@@ -40,11 +40,6 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0;
 }
 
 nav ul li a {
@@ -53,27 +48,12 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Mobile Menu */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
     background: url('../images/hero.jpg') no-repeat center center/cover;
     color: white;
-}
-
-.hero h1 {
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 .cta-button {
@@ -87,6 +67,21 @@ nav ul li a {
     margin-top: 1rem;
 }
 
+/* Info Section (Weather & Community Updates) */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.info-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Business Spotlights */
 .spotlights {
     display: flex;
@@ -97,9 +92,9 @@ nav ul li a {
 
 .spotlight {
     background: white;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -109,11 +104,4 @@ footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
 }
