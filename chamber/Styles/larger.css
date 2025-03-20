@@ -20,21 +20,22 @@
         padding: 1.2rem 2.5rem;
     }
     
+    /* Info Section (Weather & Community Updates) */
+    .info-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
     /* Business Spotlights */
     .spotlights {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        padding: 2rem 3rem;
-        align-items: stretch;
     }
     
     .spotlight {
-        background: white;
         padding: 2rem;
-        border-radius: 5px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        text-align: center;
     }
     
     /* Footer */
@@ -42,12 +43,6 @@
         display: flex;
         justify-content: space-between;
         padding: 2rem 3rem;
-        text-align: left;
-    }
-    
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
         text-align: left;
     }
 }
