@@ -37,7 +37,7 @@ nav ul li a {
 .hero {
     text-align: center;
     padding: 6rem 2rem;
-    background: url('../images/hero-image.jpg') center/cover no-repeat;
+    background: url('../chamber/Images/Ibadan_Town_Hall.jpg') center/cover no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
