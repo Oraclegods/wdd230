@@ -4,10 +4,15 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // ✅ Update Last Modified Date
 document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-// ✅ Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+// Dark Mode Toggle
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    darkModeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+
+        // Change button icon based on mode
+        darkModeToggle.innerHTML = body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";;
 });
 
 // ✅ Menu Toggle for Mobile
