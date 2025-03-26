@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-    color: #333;
+    color: #222; /* Darker text for better readability */
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: #123456; /* Darker blue for better contrast */
+    background-color: #1c3d5a;
     color: white;
     padding: 10px;
 }
@@ -24,7 +24,7 @@ header img {
 #menuToggle {
     background: none;
     border: none;
-    color: #004080; /* Darker blue for better contrast */
+    color: #0047AB; /* Stronger blue for better contrast */
     font-size: 24px;
     margin-left: auto;
     cursor: pointer;
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0056b3; /* Improved contrast */
+    color: #0047AB; /* Stronger blue for better contrast */
     text-decoration: none;
 }
 
@@ -63,8 +63,8 @@ nav ul li a {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7); /* Slightly darker for readability */
-    color: white;
+    background: rgba(0, 0, 0, 0.8); /* Darker background for more contrast */
+    color: #ffffff;
     padding: 10px 20px;
     font-size: 24px;
     font-weight: bold;
@@ -80,8 +80,35 @@ nav ul li a {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+button#darkModeToggle {
+    background-color: #0047AB; /* Darker blue for better contrast */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#darkModeToggle:hover {
+    background-color: #003580;
+}
+
+a {
+    color: #0047AB; /* Improved contrast */
+}
+
+a.active {
+    color: #8B0000; /* Dark red for better contrast */
+}
+
+span,
+span#year,
+p#lastModified {
+    color: #002855; /* Darker blue to enhance contrast */
+}
+
 footer {
-    background-color: #123456; /* Darker blue */
+    background-color: #1c3d5a;
     color: white;
     text-align: center;
     padding: 10px;
