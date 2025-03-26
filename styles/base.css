@@ -9,7 +9,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #1c3d5a;
+    background-color: #2c5d87; /* Improved contrast */
     color: white;
     padding: 10px;
 }
@@ -24,7 +24,7 @@ header img {
 #menuToggle {
     background: none;
     border: none;
-    color: Blue;
+    color: white; /* Improved contrast */
     font-size: 24px;
     margin-left: auto;
     cursor: pointer;
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: Blue;
+    color: #007bff; /* Brighter blue for better contrast */
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #1c3d5a;
+    background-color: #2c5d87; /* Improved contrast */
     color: white;
     text-align: center;
     padding: 10px;
