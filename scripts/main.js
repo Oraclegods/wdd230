@@ -18,6 +18,7 @@ darkModeToggle.addEventListener("click", function () {
 // ✅ Menu Toggle for Mobile
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
+const navLinks = document.querySelectorAll('#navMenu a'); // Select all menu links
 
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('show');
@@ -30,9 +31,19 @@ document.addEventListener('click', (event) => {
     }
 });
 
+// ✅ Allow Navigation When a Link is Clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show'); // Hide menu after clicking a link
+    });
+});
+
 // ✅ Visit Counter with localStorage
 const visitCountElement = document.getElementById('visitCount');
 let visitCount = localStorage.getItem('visitCount') ? parseInt(localStorage.getItem('visitCount')) : 0;
 visitCount++;
 localStorage.setItem('visitCount', visitCount);
 visitCountElement.textContent = visitCount;
+
+// ✅ Ensure Visit Counter is Black
+visitCountElement.style.color = 'black';
