@@ -120,8 +120,9 @@ p#lastModified {
     color: white !important;
 }
 
+/* Visit count should be black */
 #visitCount {
-    color: black;
+    color: black !important;
     font-weight: bold; /* Optional: Makes the number stand out */
 }
 
