@@ -4,15 +4,15 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // ✅ Update Last Modified Date
 document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-// Dark Mode Toggle
-    const darkModeToggle = document.getElementById("darkModeToggle");
-    const body = document.body;
+// ✅ Dark Mode Toggle
+const darkModeToggle = document.getElementById("darkModeToggle");
+const body = document.body;
 
-    darkModeToggle.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
+darkModeToggle.addEventListener("click", function () {
+    body.classList.toggle("dark-mode");
 
-        // Change button icon based on mode
-        darkModeToggle.innerHTML = body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";;
+    // Change button text based on mode
+    darkModeToggle.innerHTML = body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
 });
 
 // ✅ Menu Toggle for Mobile
@@ -21,6 +21,13 @@ const navMenu = document.getElementById('navMenu');
 
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('show');
+});
+
+// ✅ Close menu when clicking outside (Optional)
+document.addEventListener('click', (event) => {
+    if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+        navMenu.classList.remove('show');
+    }
 });
 
 // ✅ Visit Counter with localStorage
