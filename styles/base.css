@@ -22,11 +22,11 @@ header img {
     margin-right: 10px;
 }
 
-/* Toggle menu button should be white */
+/* Toggle menu button should be blue */
 #menuToggle {
     background: none;
     border: none;
-    color: white !important; /* Ensure visibility */
+    color: #0047AB !important; /* Blue menu */
     font-size: 24px;
     margin-left: auto;
     cursor: pointer;
@@ -111,9 +111,13 @@ a.active {
 /* Ensure all text on dark backgrounds is white */
 span,
 span#year,
-p#lastModified,
 .name { 
     color: white !important; 
+}
+
+/* Visit count should be black */
+p#lastModified {
+    color: black !important;
 }
 
 /* Footer */
