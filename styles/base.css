@@ -26,7 +26,7 @@ header img {
 #menuToggle {
     background: none;
     border: none;
-    color: #0047AB !important; /* Blue menu */
+    color: white !important; /* Blue menu */
     font-size: 24px;
     margin-left: auto;
     cursor: pointer;
