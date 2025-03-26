@@ -6,11 +6,12 @@ body {
     color: #222; /* Darker text for better readability */
 }
 
+/* Header */
 header {
     display: flex;
     align-items: center;
-    background-color: #1c3d5a;
-    color: white;
+    background-color: #1c3d5a; /* Dark background */
+    color: white; /* Ensure text is white */
     padding: 10px;
 }
 
@@ -21,15 +22,17 @@ header img {
     margin-right: 10px;
 }
 
+/* Toggle menu button should be white */
 #menuToggle {
     background: none;
     border: none;
-    color: #0047AB; /* Stronger blue for better contrast */
+    color: white !important; /* Ensure visibility */
     font-size: 24px;
     margin-left: auto;
     cursor: pointer;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -43,10 +46,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0047AB; /* Stronger blue for better contrast */
+    color: white !important; /* White text on dark background */
     text-decoration: none;
 }
 
+/* Hero section */
 .hero {
     position: relative;
     text-align: center;
@@ -63,8 +67,8 @@ nav ul li a {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.8); /* Darker background for more contrast */
-    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8); /* Darker background */
+    color: white !important; /* White text for contrast */
     padding: 10px 20px;
     font-size: 24px;
     font-weight: bold;
@@ -72,6 +76,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
+/* Card */
 .card {
     background: white;
     padding: 20px;
@@ -80,9 +85,10 @@ nav ul li a {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Dark mode toggle button */
 button#darkModeToggle {
-    background-color: #FFFFFF; /* Darker blue for better contrast */
-    color: white;
+    background-color: #0047AB; /* Dark blue */
+    color: white !important; /* White text */
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -93,20 +99,24 @@ button#darkModeToggle:hover {
     background-color: #003580;
 }
 
+/* Links */
 a {
-    color: #0047AB; /* Improved contrast */
+    color: #0047AB; /* Blue text for visibility */
 }
 
 a.active {
-    color: #8B0000; /* Dark red for better contrast */
+    color: white !important; /* White text on dark backgrounds */
 }
 
+/* Ensure all text on dark backgrounds is white */
 span,
 span#year,
-p#lastModified {
-    color: #002855; /* Darker blue to enhance contrast */
+p#lastModified,
+.name { 
+    color: white !important; 
 }
 
+/* Footer */
 footer {
     background-color: #1c3d5a;
     color: white;
@@ -115,6 +125,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Responsive styles */
 @media (min-width: 600px) {
     nav ul {
         display: block;
