@@ -22,8 +22,9 @@ header img {
     margin-right: 10px;
 }
 
-/* Toggle menu should be blue */
+/* Hide menu toggle by default on larger screens */
 #menuToggle {
+    display: none; /* Hide on large screens */
     background: none;
     border: none;
     color: white !important; /* Blue menu */
@@ -38,6 +39,29 @@ nav ul {
     padding: 0;
     margin: 0;
     display: none;
+}
+
+/* Show menu toggle only on mobile */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block; /* Show on mobile */
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex; /* Show when menu is toggled */
+    }
 }
 
 nav ul li {
@@ -125,7 +149,6 @@ p#lastModified {
     color: black !important;
     font-weight: bold; /* Optional: Makes the number stand out */
 }
-
 
 /* Footer */
 footer {
