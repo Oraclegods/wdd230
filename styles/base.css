@@ -105,7 +105,7 @@ a {
 }
 
 a.active {
-    color: white !important; /* White text on dark backgrounds */
+    color: black !important; /* White text on dark backgrounds */
 }
 
 /* Ensure all text on dark backgrounds is white */
@@ -117,7 +117,7 @@ span#year,
 
 /* Visit count should be black */
 p#lastModified {
-    color: black !important;
+    color: white !important;
 }
 
 /* Footer */
