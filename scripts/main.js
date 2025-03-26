@@ -10,32 +10,30 @@ const body = document.body;
 
 darkModeToggle.addEventListener("click", function () {
     body.classList.toggle("dark-mode");
-
-    // Change button text based on mode
     darkModeToggle.innerHTML = body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
 });
 
 // ✅ Menu Toggle for Mobile
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
-const navLinks = document.querySelectorAll('#navMenu a'); // Select all menu links
+const menuLinks = navMenu.querySelectorAll("a");
 
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('show');
 });
 
-// ✅ Close menu when clicking outside (Optional)
-document.addEventListener('click', (event) => {
-    if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-        navMenu.classList.remove('show');
-    }
+// ✅ Close menu when clicking a menu item
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+    });
 });
 
-// ✅ Allow Navigation When a Link is Clicked
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('show'); // Hide menu after clicking a link
-    });
+// ✅ Close menu when clicking outside
+document.addEventListener("click", (event) => {
+    if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+        navMenu.classList.remove("show");
+    }
 });
 
 // ✅ Visit Counter with localStorage
@@ -44,6 +42,4 @@ let visitCount = localStorage.getItem('visitCount') ? parseInt(localStorage.getI
 visitCount++;
 localStorage.setItem('visitCount', visitCount);
 visitCountElement.textContent = visitCount;
-
-// ✅ Ensure Visit Counter is Black
-visitCountElement.style.color = 'black';
+visitCountElement.style.color = "black"; // Ensuring visit counter text is black
