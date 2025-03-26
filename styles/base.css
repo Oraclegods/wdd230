@@ -120,6 +120,12 @@ p#lastModified {
     color: white !important;
 }
 
+#visitCount {
+    color: black;
+    font-weight: bold; /* Optional: Makes the number stand out */
+}
+
+
 /* Footer */
 footer {
     background-color: #1c3d5a;
