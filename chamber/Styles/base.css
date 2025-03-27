@@ -101,13 +101,73 @@ nav ul li a {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Discover Page Grid Layout */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #004080;
+    text-align: center;
+}
+
+/* Visit Message */
+.visit-message {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect (Desktop Only) */
+@media (min-width: 768px) {
+    .gallery img:hover {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+/* Lazy Loading */
+img[lazy="true"] {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+img[lazy="true"].loaded {
+    opacity: 1;
+}
+
 /* Responsive: Stack elements on smaller screens */
 @media (max-width: 768px) {
-    .updates-grid {
-        grid-template-columns: 1fr; /* Stack weather & updates */
-    }
-    .spotlights {
-        grid-template-columns: 1fr; /* Stack business spotlights */
+    .updates-grid,
+    .spotlights,
+    .discover-grid {
+        grid-template-columns: 1fr; /* Stack elements */
     }
 }
 
