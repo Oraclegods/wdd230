@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ibadan Chamber of Commerce - Supporting businesses in Ibadan with networking, events, and resources.">
+    <meta name="description" content="Discover Ibadan - Explore its business opportunities, culture, and attractions.">
     <meta name="author" content="Folusho Sanni">
-    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:title" content="Discover Ibadan">
     <meta property="og:type" content="website">
     <meta property="og:image" content="Images/Ibadan_Town_Hall.jpg">
-    <meta property="og:url" content="https://ibadanchamber.com">
-    <title>Ibadan Chamber of Commerce</title>
+    <meta property="og:url" content="https://ibadanchamber.com/discover.html">
+    <title>Discover Ibadan</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="Styles/base.css">
     <link rel="stylesheet" href="Styles/larger.css">
     <link rel="stylesheet" href="Styles/normalize.css">
-
+    <link rel="stylesheet" href="Styles/discover.css">
 </head>
 <body>
     <header>
@@ -33,45 +33,47 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section with Background Image -->
-        <section class="hero">
-            <h1>Welcome to Ibadan City Chamber of Commerce</h1>
-            <p>Promoting business growth and community development in Ibadan.</p>
-            <a href="join.html" class="cta-button">Join Now</a>
-        </section>
+    <main class="discover-grid">
+        <aside class="sidebar">
+            <h2>Visitor Information</h2>
+            <p id="visit-message"></p>
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Business Conference - March 25, 2025</li>
+                <li>Ibadan Cultural Festival - April 10, 2025</li>
+            </ul>
+            <h3>Ibadan Demographics</h3>
+            <p>Population: ~3 million</p>
+            <p>Major Industries: Manufacturing, Agriculture, Tech</p>
+        </aside>
 
-        <!-- Weather and Community Updates in a Responsive Grid -->
-        <section class="updates-grid">
-            <div class="weather">
-                <h2>Weather Update</h2>
-                <p>72°F - Sunny with light breeze</p>
-            </div>
-            <div class="current-events">
-                <h2>Community Updates</h2>
-                <ul>
-                    <li>Business Networking Event - March 15, 2025</li>
-                    <li>Annual Trade Show - April 5, 2025</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Business Updates Section -->
-        <section class="business-updates">
-            <h1>Business Updates</h1>
-            <div class="spotlights">
-                <div class="spotlight">
-                    <h3>Tech Solutions Inc.</h3>
-                    <p>Leading IT services provider in the region</p>
-                </div>
-                <div class="spotlight">
-                    <h3>Green Energy Co.</h3>
-                    <p>Sustainable energy solutions</p>
-                </div>
-                <div class="spotlight">
-                    <h3>Local Cafe Chain</h3>
-                    <p>Your neighborhood coffee destination</p>
-                </div>
+        <section class="photo-gallery">
+            <h2>Explore Ibadan</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="Images/photo1.jpg" alt="Historical site in Ibadan" loading="lazy">
+                    <figcaption>Historical Site</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/photo2.jpg" alt="Ibadan city skyline" loading="lazy">
+                    <figcaption>City Skyline</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/photo3.jpg" alt="Local market scene" loading="lazy">
+                    <figcaption>Local Market</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/photo4.jpg" alt="Business district in Ibadan" loading="lazy">
+                    <figcaption>Business District</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/photo5.jpg" alt="Ibadan street view" loading="lazy">
+                    <figcaption>Street View</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/photo6.jpg" alt="Cultural performance in Ibadan" loading="lazy">
+                    <figcaption>Cultural Performance</figcaption>
+                </figure>
             </div>
         </section>
     </main>
@@ -88,8 +90,6 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById("last-modified").textContent = document.lastModified;
-    </script>
+    <script src="Scripts/discover.js"></script>
 </body>
 </html>
