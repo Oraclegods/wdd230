@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibadan Chamber of Commerce - Supporting businesses in Ibadan with networking, events, and resources.">
+    <meta name="author" content="Folusho Sanni">
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/Ibadan_Town_Hall.jpg">
+    <meta property="og:url" content="https://ibadanchamber.com">
+    <title>Ibadan Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="Styles/base.css">
+    <link rel="stylesheet" href="Styles/larger.css">
+    <link rel="stylesheet" href="Styles/normalize.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/ibadan_logo.png" alt="Ibadan Chamber of Commerce Logo">
+        </div>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Background Image -->
+        <section class="hero">
+            <h1>Welcome to Ibadan City Chamber of Commerce</h1>
+            <p>Promoting business growth and community development in Ibadan.</p>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </section>
+
+        <!-- Weather and Community Updates in a Responsive Grid -->
+        <section class="updates-grid">
+            <div class="weather">
+                <h2>Weather Update</h2>
+                <p>72°F - Sunny with light breeze</p>
+            </div>
+            <div class="current-events">
+                <h2>Community Updates</h2>
+                <ul>
+                    <li>Business Networking Event - March 15, 2025</li>
+                    <li>Annual Trade Show - April 5, 2025</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Business Updates Section -->
+        <section class="business-updates">
+            <h1>Business Updates</h1>
+            <div class="spotlights">
+                <div class="spotlight">
+                    <h3>Tech Solutions Inc.</h3>
+                    <p>Leading IT services provider in the region</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Green Energy Co.</h3>
+                    <p>Sustainable energy solutions</p>
+                </div>
+                <div class="spotlight">
+                    <h3>Local Cafe Chain</h3>
+                    <p>Your neighborhood coffee destination</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>123 Business Ave, Ibadan, Nigeria</p>
+            <p>Email: info@chamber.com</p>
+        </div>
+        <div class="developer-info">
+            <p>Project by Folusho Sanni for WDD 230</p>
+            <p>Last updated: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
