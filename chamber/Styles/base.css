@@ -43,6 +43,9 @@ nav ul li a {
   .menu-toggle {
     display: block; /* Show only on small screens */
   }
+.nav-menu.show {
+    display: block; /* Show when the menu is toggled */
+  }
 }
 
 
