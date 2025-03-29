@@ -33,6 +33,19 @@ nav ul li a {
     font-weight: bold;
 }
 
+
+.menu-toggle {
+  display: none; /* Hide by default */
+}
+
+/* Show only on screens smaller than 768px (typical mobile size) */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show only on small screens */
+  }
+}
+
+
 /* Hero Section with Background Image */
 .hero {
     text-align: center;
