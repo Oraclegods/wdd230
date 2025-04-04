@@ -49,30 +49,34 @@ nav ul li a {
 }
 
 ------
-/* Membership Form Section */
+/* Membership Form Section - Centering */
 .membership-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centers content horizontally */
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
+    max-width: 900px; /* Set a max-width for better centering */
+    margin: 0 auto; /* Centers the entire form container */
 }
 
+/* Membership Form */
 .membership-form {
-    flex: 2; /* Takes more space */
+    flex: 2;
     padding: 2rem;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Personal Information Section (Aligned Right) */
+/* Personal Information Section - Left Alignment */
 .personal-info {
-    flex: 1; /* Takes less space */
+    flex: 1;
     padding: 2rem;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Aligns text and form inputs to the left */
 }
 
 /* Form Elements */
@@ -120,12 +124,14 @@ nav ul li a {
     .membership-container {
         flex-direction: column;
         gap: 1rem;
+        align-items: center; /* Centers the form on small screens */
     }
 
     .membership-form, .personal-info {
         width: 100%;
     }
 }
+
 -------
 
 
