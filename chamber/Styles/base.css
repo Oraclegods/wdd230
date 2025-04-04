@@ -49,14 +49,14 @@ nav ul li a {
 }
 
 ------
-/* Center the form with max-width and auto margin */
+/* Main container centered with 20-60-20 layout */
 .membership-container {
-  max-width: 900px;
+  width: 60%;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* Form styling */
+/* Membership form styling */
 .membership-form {
   width: 100%;
   padding: 2rem;
@@ -65,26 +65,25 @@ nav ul li a {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure all fields are same width and aligned */
-.membership-form .form-group,
+/* Uniform input, label, select, textarea widths */
 .membership-form label,
 .membership-form input,
 .membership-form select,
 .membership-form textarea {
   display: block;
   width: 100%;
-  box-sizing: border-box;
   margin-bottom: 1rem;
   font-family: inherit;
+  box-sizing: border-box;
 }
 
-/* Label styles */
+/* Label styling */
 .membership-form label {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-/* Input, select, textarea styling */
+/* Input and select styling */
 .membership-form input,
 .membership-form select,
 .membership-form textarea {
@@ -94,7 +93,7 @@ nav ul li a {
   resize: vertical;
 }
 
-/* Make business description textarea fill the same width */
+/* Business description fills full width */
 .membership-form textarea#description {
   min-height: 150px;
 }
@@ -117,9 +116,10 @@ nav ul li a {
   margin-bottom: 0.5rem;
 }
 
-/* Responsive layout */
+/* Responsive Design: stack on smaller screens */
 @media (max-width: 768px) {
   .membership-container {
+    width: 90%;
     padding: 1rem;
   }
 
