@@ -49,96 +49,61 @@ nav ul li a {
 }
 
 ------
-/* Membership Form Section - Center Everything */
+/* Center the whole form on the page */
 .membership-container {
-    display: flex;
-    justify-content: center; /* Center the whole form area */
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto; /* Center horizontally on the page */
-    box-sizing: border-box;
-}
-
-/* Membership Form */
-.membership-form {
-    flex: 2;
+    max-width: 960px;
+    margin: 0 auto; /* this centers the form */
     padding: 2rem;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Personal Information Section */
-.personal-info {
-    flex: 1;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Align all form content left */
-.membership-form, .personal-info {
+/* Style the form inside */
+.membership-form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Ensure everything aligns to the left */
+    gap: 2rem;
 }
 
-/* Form Elements */
-.membership-form .form-group,
-.personal-info .form-group {
-    width: 100%;
-    margin-bottom: 1rem;
+/* Fieldset spacing and layout */
+.membership-form fieldset {
+    border: none;
+    padding: 0;
 }
 
-.membership-form label,
-.personal-info label {
+/* Ensure labels and inputs align left */
+.membership-form label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.25rem;
     text-align: left;
-    width: 100%;
 }
 
-.membership-form input, 
-.membership-form select, 
-.membership-form textarea,
-.personal-info input {
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-/* Membership Benefits */
-.membership-benefits {
-    margin-top: 2rem;
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-.membership-benefits ul {
-    list-style: none;
-    padding: 0;
-}
-
-.membership-benefits li {
     margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
 }
 
-/* Responsive Design: Stack elements on small screens */
+/* Benefits list styling */
+#membershipBenefits ul {
+    padding-left: 1.25rem;
+}
+
+#membershipBenefits li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .membership-container {
-        flex-direction: column;
-        align-items: center;
         padding: 1rem;
-    }
-
-    .membership-form, .personal-info {
-        width: 100%;
     }
 }
 
