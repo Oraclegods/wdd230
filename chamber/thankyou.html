@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Application</title>
+    <meta name="description" content="Thank you for submitting your membership application.">
+    <meta name="author" content="Folusho Sanni">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <header>
+        <img src="Images/photo_py.jpg" alt="Folusho Sanni Profile Photo">
+        <span>Folusho Sanni</span>
+        <button id="menuToggle">☰</button>
+    </header>
+    <nav id="navMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="#">Thank You</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Thank You for Your Application!</h1>
+        <p>Your membership application has been received. We will review your submission and get back to you shortly.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Folusho Sanni, Nigeria</p>
+    </footer>
+
+    <script>
+        // Set the year dynamically
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
