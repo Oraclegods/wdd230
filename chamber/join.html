@@ -20,7 +20,6 @@
     
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
     <header>
@@ -104,12 +103,6 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script>
-        // Set current timestamp in hidden input field
-        document.getElementById("timestamp").value = new Date().toISOString();
-
-        // Set the year dynamically
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="Scripts/chamberold.js"></script>
 </body>
 </html>
