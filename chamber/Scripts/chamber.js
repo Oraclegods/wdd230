@@ -20,3 +20,11 @@ if (!lastVisit) {
 
 // Store the current visit time
 localStorage.setItem("lastVisit", now);
+
+// Set the current timestamp for the form on 'join.html'
+document.addEventListener('DOMContentLoaded', () => {
+    const timestampInput = document.getElementById('timestamp');
+    if (timestampInput) {
+        timestampInput.value = new Date().toISOString();
+    }
+});
