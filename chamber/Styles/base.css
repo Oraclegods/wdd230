@@ -49,6 +49,52 @@ nav ul li a {
 }
 
 
+/* new form section */
+/* New form styles */
+.membership-form {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.membership-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.membership-form input, .membership-form select, .membership-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.membership-benefits {
+    margin-top: 2rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-benefits li {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
 /* Hero Section with Background Image */
 .hero {
     text-align: center;
