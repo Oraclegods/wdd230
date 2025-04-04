@@ -49,64 +49,84 @@ nav ul li a {
 }
 
 ------
-/* Center the whole form on the page */
+/* Center the form with max-width and auto margin */
 .membership-container {
-    max-width: 960px;
-    margin: 0 auto; /* this centers the form */
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* Style the form inside */
+/* Form styling */
 .membership-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Fieldset spacing and layout */
-.membership-form fieldset {
-    border: none;
-    padding: 0;
-}
-
-/* Ensure labels and inputs align left */
-.membership-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.25rem;
-    text-align: left;
-}
-
+/* Ensure all fields are same width and aligned */
+.membership-form .form-group,
+.membership-form label,
 .membership-form input,
 .membership-form select,
 .membership-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  font-family: inherit;
 }
 
-/* Benefits list styling */
+/* Label styles */
+.membership-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Input, select, textarea styling */
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Make business description textarea fill the same width */
+.membership-form textarea#description {
+  min-height: 150px;
+}
+
+/* Membership benefits section */
+#membershipBenefits {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
 #membershipBenefits ul {
-    padding-left: 1.25rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 #membershipBenefits li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Responsive */
+/* Responsive layout */
 @media (max-width: 768px) {
-    .membership-container {
-        padding: 1rem;
-    }
-}
+  .membership-container {
+    padding: 1rem;
+  }
 
+  .membership-form {
+    padding: 1rem;
+  }
+}
 
 -------
 
