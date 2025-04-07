@@ -1,115 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join Chamber of Commerce - Folusho Sanni</title>
-<meta name="description" content="Explore Folusho Sanni's Web Frontend Development portfolio, showcasing assignments, learning activities, and projects from the WDD 230 course.">
-<meta name="author" content="Folusho Sanni">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibadan Chamber of Commerce - Supporting businesses in Ibadan with networking, events, and resources.">
+    <meta name="author" content="Folusho Sanni">
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/Ibadan_Town_Hall.jpg">
+    <meta property="og:url" content="https://ibadanchamber.com">
+    <title>Ibadan Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Join Chamber of Commerce - Folusho Sanni">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://example.com/images/nigeria-city.jpg">
-<meta property="og:url" content="https://example.com/join.html">
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-<!-- Correct CSS File Paths (must be lowercase and inside 'styles/' directory) -->
-<link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/larger.css">
-
+    <link rel="stylesheet" href="Styles/base.css">
+    <link rel="stylesheet" href="Styles/larger.css">
 </head>
 <body>
-  <header>
-    <img src="images/chamber-logo.png" alt="Chamber of Commerce Logo">
-    <span>Ibadan Chamber of commerce</span>
-    <button id="menuToggle">☰</button>
-  </header>
-
-  <nav id="navMenu">
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="chamber/index.html">Chamber</a></li>
-      <li><a href="https://oraclegods.github.io/wdd230/chamber/discover.html">Discover</a></li>
-      <li><a href="week03/lazyload.html">Lazyload</a></li>
-      <li><a href="https://codepen.io/Oraclegods/pen/azbXRpb">codepen</a></li>
-      <li><a href="https://oraclegods.github.io/wdd230/week04/tablebuild.html">Table build</a></li>
-      <li><a href="week03/responsive-images.html">srcset</a></li>
-      <li><a href="week03/images/landscape.webp">WebP Image</a></li>
-      <li><a href="https://github.com/Oraclegods/wdd230/blob/main/week04/Images/w3schools.png">w3schools</a></li>
-      <li><a href="#">Site Plan</a></li>
-      <li><a href="https://oraclegods.github.io/wdd230/form.html">Form</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h1>Membership Application</h1>
-
-    <!-- Wrapped the form in a container div -->
-    <div class="membership-container">
-      <form action="thankyou.html" method="get" class="membership-form">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName" required>
-
-          <label for="lastName">Last Name:</label>
-          <input type="text" id="lastName" name="lastName" required>
-
-          <label for="title">Title/Position:</label>
-          <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces, and hyphens allowed (min 7 characters)" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="example@example.com">
-
-          <label for="phone">Mobile Phone:</label>
-          <input type="tel" id="phone" name="phone" required>
-
-          <label for="businessName">Business Name:</label>
-          <input type="text" id="businessName" name="businessName" required>
-        </fieldset>
-
-        <fieldset>
-          <legend>Membership Level</legend>
-          <label for="membershipLevel">Choose a membership level:</label>
-          <select id="membershipLevel" name="membershipLevel">
-            <option value="np">NP Membership (Non-Profit, no fee)</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-          </select>
-          <div id="membershipBenefits">
-            <p><strong>Benefits:</strong></p>
-            <ul>
-              <li>NP: No fee</li>
-              <li>Bronze: Basic benefits</li>
-              <li>Silver: Special events and discounts</li>
-              <li>Gold: Premium benefits and spotlight position</li>
+    <header>
+        <div class="logo">
+            <img src="Images/ibadan_logo.png" alt="Ibadan Chamber of Commerce Logo">
+        </div>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
-          </div>
-        </fieldset>
+        </nav>
+    </header>
 
-        <fieldset>
-          <legend>Business Description</legend>
-          <label for="description">Business Description:</label>
-          <textarea id="description" name="description"></textarea>
-        </fieldset>
+    <main>
+        <h1>Membership Application</h1>
 
-        <input type="hidden" id="timestamp" name="timestamp" value="">
-        <input type="submit" value="Submit Application">
-      </form>
-    </div>
-  </main>
+        <!-- Wrapped the form in a container div -->
+        <div class="membership-container">
+            <form action="thankyou.html" method="get" class="membership-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Folusho Sanni, Nigeria</p>
-    <p id="lastModified"></p>
-  </footer>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
 
-  <script src="Scripts/chamber.js"></script>
+                    <label for="title">Title/Position:</label>
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces, and hyphens allowed (min 7 characters)" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="businessName">Business Name:</label>
+                    <input type="text" id="businessName" name="businessName" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label for="membershipLevel">Choose a membership level:</label>
+                    <select id="membershipLevel" name="membershipLevel">
+                        <option value="np">NP Membership (Non-Profit, no fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                    <div id="membershipBenefits">
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>NP: No fee</li>
+                            <li>Bronze: Basic benefits</li>
+                            <li>Silver: Special events and discounts</li>
+                            <li>Gold: Premium benefits and spotlight position</li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label for="description">Business Description:</label>
+                    <textarea id="description" name="description"></textarea>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>123 Business Ave, Ibadan, Nigeria</p>
+            <p>Email: info@chamber.com</p>
+        </div>
+        <div class="developer-info">
+            <p>Project by Folusho Sanni for WDD 230</p>
+            <p>Last updated: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="Scripts/chamberold.js"></script>
 </body>
 </html>
