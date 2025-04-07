@@ -51,7 +51,7 @@ nav ul li a {
 ------
 /* Membership Container - Centered with 20-60-20 Layout */
 .membership-container {
-  max-width: 400px;         /* Approx. 60% of most screen sizes */
+  max-width: 200px;         /* Approx. 60% of most screen sizes */
   margin: 0 auto;           /* Center horizontally */
   padding: 2rem 1rem;       /* Top/bottom spacing, small horizontal breathing room */
   box-sizing: border-box;
