@@ -49,12 +49,14 @@ nav ul li a {
 }
 
 ------
+
 /* Full-height centering setup */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
 
 .membership-container h1 {
   text-align: center;
@@ -142,9 +144,6 @@ html, body {
 
 -------
 
-
-
-
 /* Hero Section with Background Image */
 .hero {
     text-align: center;
@@ -157,6 +156,7 @@ html, body {
     align-items: center;
     height: 400px;
 }
+
 
 .hero h1, .hero p {
     background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
