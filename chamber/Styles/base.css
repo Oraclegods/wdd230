@@ -49,12 +49,22 @@ nav ul li a {
 }
 
 ------
-/* Membership Container - Centered with 20-60-20 Layout */
+/* Full-height centering setup */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Membership Container - Centered both vertically and horizontally */
 .membership-container {
-  max-width: 800px;         /* Approx. 60% of most screen sizes */
-  margin: 0 auto;           /* Center horizontally */
-  padding: 2rem 1rem;       /* Top/bottom spacing, small horizontal breathing room */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;        /* Full viewport height */
+  padding: 2rem 1rem;
   box-sizing: border-box;
+  background-color: #f5f5f5; /* optional background */
 }
 
 /* Membership Form Box */
@@ -64,7 +74,9 @@ nav ul li a {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  width: 50%;
+  width: 60vw;
+  max-width: 800px;
+  min-width: 320px;
 }
 
 /* Form Elements: Labels and Inputs */
@@ -72,6 +84,7 @@ nav ul li a {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .membership-form input,
@@ -112,12 +125,12 @@ nav ul li a {
 
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
-  .membership-container {
-    max-width: 95%;
+  .membership-form {
+    width: 90vw;
     padding: 1rem;
   }
 
-  .membership-form {
+  .membership-container {
     padding: 1rem;
   }
 }
