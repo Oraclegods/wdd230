@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const passwordError = document.getElementById("password-error");
     const rating = document.getElementById("rating");
     const ratingValue = document.getElementById("rating-value");
+    const form = document.getElementById("form"); // Assuming form has an id of 'form'
 
     confirmPassword.addEventListener("input", function() {
         if (confirmPassword.value !== password.value) {
@@ -17,5 +18,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     rating.addEventListener("input", function() {
         ratingValue.textContent = rating.value;
+    });
+
+    form.addEventListener("submit", function(event) {
+        // Check if the passwords match before submitting
+        if (password.value !== confirmPassword.value) {
+            event.preventDefault(); // Prevent form submission
+            passwordError.textContent = "Passwords do not match!";
+            passwordError.style.display = "block";
+        }
     });
 });
