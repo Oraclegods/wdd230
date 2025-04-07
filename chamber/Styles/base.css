@@ -49,34 +49,27 @@ nav ul li a {
 }
 
 ------
-/* 20-60-20 Layout */
+/* Membership Container - Centered with 20-60-20 Layout */
 .membership-container {
-  width: 60vw; /* 60% of viewport width */
-  margin: 0 auto; /* centers the container */
-  padding: 2rem 0;
+  max-width: 800px;         /* Approx. 60% of most screen sizes */
+  margin: 0 auto;           /* Center horizontally */
+  padding: 2rem 1rem;       /* Top/bottom spacing, small horizontal breathing room */
+  box-sizing: border-box;
 }
 
-/* Membership form */
+/* Membership Form Box */
 .membership-form {
-  width: 100%;
-  padding: 2rem;
   background-color: #fff;
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-}
-
-/* Input structure */
-.membership-form label,
-.membership-form input,
-.membership-form select,
-.membership-form textarea {
-  display: block;
   width: 100%;
-  box-sizing: border-box;
 }
 
+/* Form Elements: Labels and Inputs */
 .membership-form label {
+  display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -84,19 +77,22 @@ nav ul li a {
 .membership-form input,
 .membership-form select,
 .membership-form textarea {
+  display: block;
+  width: 100%;
   padding: 0.75rem;
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
-/* Full width for textarea */
+/* Make Textarea Full Height */
 .membership-form textarea#description {
   min-height: 150px;
-  width: 100%;
+  resize: vertical;
 }
 
-/* Membership benefits styling */
+/* Membership Benefits Styling */
 #membershipBenefits {
   background-color: #f9f9f9;
   padding: 1rem;
@@ -114,10 +110,10 @@ nav ul li a {
   margin-bottom: 0.5rem;
 }
 
-/* Responsive behavior */
+/* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
   .membership-container {
-    width: 90vw;
+    max-width: 95%;
     padding: 1rem;
   }
 
