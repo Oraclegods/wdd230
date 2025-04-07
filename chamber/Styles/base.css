@@ -56,6 +56,11 @@ html, body {
   padding: 0;
 }
 
+.membership-container h1 {
+  text-align: center;
+  margin-bottom: 1rem; /* optional spacing below the heading */
+}
+
 /* Membership Container - Centered both vertically and horizontally */
 .membership-container {
   display: flex;
