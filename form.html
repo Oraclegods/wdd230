@@ -3,22 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Folusho Sanni - WDD 230 - form design.">
+    <title>Folusho Sanni - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Folusho Sanni - WDD 230 - Web Frontend Development course assignment portal.">
     <meta name="author" content="Folusho Sanni">
-    <title>Form Page</title>
-    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Folusho Sanni - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/images/nigeria-city.jpg">
+    <meta property="og:url" content="https://example.com/index.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
     <header>
-        <h1>Form Submission</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
+        <img src="Images/photo_py.jpg" alt="Folusho Sanni Profile Photo">
+        <span>Folusho Sanni</span>
+        <button id="menuToggle">☰</button>
     </header>
+    <nav id="navMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://oraclegods.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="week03/lazyload.html">Lazyload</a></li>
+            <li><a href="https://codepen.io/Oraclegods/pen/azbXRpb">codepen</a></li>
+            <li><a href="https://oraclegods.github.io/wdd230/week04/tablebuild.html">Table build</a></li>
+            <li><a href="week03/responsive-images.html">srcset</a></li>
+            <li><a href="week03/images/landscape.webp">WebP Image</a></li>
+            <li><a href="https://github.com/Oraclegods/wdd230/blob/main/week04/Images/w3schools.png">w3schools</a></li>
+            <li><a href="https://oraclegods.github.io/wdd230/chamber/join.html">Join form</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="https://oraclegods.github.io/wdd230/form.html">Form</a></li>
+        </ul>
+    </nav>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
 
     <main>
+        <h1>Form Submission</h1>
         <form id="form" action="record.html" method="get">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
@@ -45,9 +74,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 WDD230 Course</p>
+        <p>&copy; <span id="year"></span> Folusho Sanni, Nigeria</p>
+        <p id="lastModified"></p>
     </footer>
 
     <script src="scripts/form.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
