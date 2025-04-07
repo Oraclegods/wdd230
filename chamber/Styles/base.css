@@ -48,7 +48,7 @@ nav ul li a {
   }
 }
 
-------
+/*starts joins here */
 
 /* Full-height centering setup */
 html, body {
@@ -142,7 +142,7 @@ html, body {
   }
 }
 
--------
+/* ends joins here */
 
 /* Hero Section with Background Image */
 .hero {
