@@ -58,15 +58,20 @@ async function getWeather() {
         const description = data.weather[0].description;
         const iconCode = data.weather[0].icon;
 
-        document.getElementById("temperature").textContent = `🌞 ${temperature}°F`;
-        document.getElementById("description").textContent = description.charAt(0).toUpperCase() + description.slice(1);
-
         const iconElement = document.getElementById("weather-icon");
         iconElement.src = `https://openweathermap.org/img/wn/${iconCode}.png`;
         iconElement.alt = description;
+        iconElement.loading = "lazy";
+
+        document.getElementById("temperature").textContent = `🌞 ${temperature}°F`;
+        document.getElementById("description").textContent = description.charAt(0).toUpperCase() + description.slice(1);
     } catch (error) {
         console.error("Error fetching weather data:", error);
     }
 }
 
-getWeather(); // Call weather function on load
+// Set fallback src to avoid validation error if JS fails
+document.getElementById("weather-icon").src = "https://via.placeholder.com/50";
+
+// Call weather function on load
+getWeather();
