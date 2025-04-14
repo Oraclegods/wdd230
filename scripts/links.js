@@ -1,10 +1,10 @@
 // Define base URL and links.json URL
-const baseURL = "https://yourgithubusername.github.io/wdd230/";
-const linksURL = "https://yourgithubusername.github.io/wdd230/data/links.json";
+const baseURL = "https://oraclegods.github.io/wdd230/";
+const linksURL = "https://oraclegods.github.io/wdd230/data/links.json";
 
 // Fetch and display the weather data
 async function getWeather() {
-    const apiKey = 'YOUR_API_KEY';  // Replace with your OpenWeatherMap API key
+    const apiKey = 433ee5fedb5d48451333629dd4f54d48;  // Replace with your OpenWeatherMap API key
     const city = 'Aba';  // Replace with your desired city
     const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
