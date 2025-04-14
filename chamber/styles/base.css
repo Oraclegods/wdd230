@@ -289,6 +289,14 @@ img[lazy="true"].loaded {
     margin: 1rem 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .view-toggle button {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
