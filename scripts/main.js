@@ -43,3 +43,30 @@ visitCount++;
 localStorage.setItem('visitCount', visitCount);
 visitCountElement.textContent = visitCount;
 visitCountElement.style.color = "black"; // Ensuring visit counter text is black
+
+// ✅ Weather API Integration (moved from links.js)
+async function getWeather() {
+    const apiKey = "433ee5fedb5d48451333629dd4f54d48";
+    const city = "Aba";
+    const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+
+    try {
+        const response = await fetch(weatherURL);
+        const data = await response.json();
+
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        const iconCode = data.weather[0].icon;
+
+        document.getElementById("temperature").textContent = `🌞 ${temperature}°F`;
+        document.getElementById("description").textContent = description.charAt(0).toUpperCase() + description.slice(1);
+
+        const iconElement = document.getElementById("weather-icon");
+        iconElement.src = `https://openweathermap.org/img/wn/${iconCode}.png`;
+        iconElement.alt = description;
+    } catch (error) {
+        console.error("Error fetching weather data:", error);
+    }
+}
+
+getWeather(); // Call weather function on load
