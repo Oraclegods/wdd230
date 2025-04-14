@@ -1,1 +1,56 @@
+{
+  "wardMembers": [
+    {
+      "familyName": "Anderson",
+      "moveInDate": "2023-06-15",
+      "numberOfPeople": 4,
+      "visitedByBishopric": true,
+      "members": [
+        {
+          "name": "John Anderson",
+          "gender": "Male",
+          "birthdate": "1980-04-12"
+        },
+        {
+          "name": "Sarah Anderson",
+          "gender": "Female",
+          "birthdate": "1982-09-22"
+        },
+        {
+          "name": "Emma Anderson",
+          "gender": "Female",
+          "birthdate": "2010-01-08"
+        },
+        {
+          "name": "Jack Anderson",
+          "gender": "Male",
+          "birthdate": "2012-05-17"
+        }
+      ]
+    },
+    {
+      "familyName": "Martinez",
+      "moveInDate": "2024-01-10",
+      "numberOfPeople": 3,
+      "visitedByBishopric": false,
+      "members": [
+        {
+          "name": "Carlos Martinez",
+          "gender": "Male",
+          "birthdate": "1990-03-25"
+        },
+        {
+          "name": "Ana Martinez",
+          "gender": "Female",
+          "birthdate": "1992-07-14"
+        },
+        {
+          "name": "Luz Martinez",
+          "gender": "Female",
+          "birthdate": "2020-12-05"
+        }
+      ]
+    }
+  ]
+}
 
