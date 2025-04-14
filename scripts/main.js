@@ -59,7 +59,7 @@ async function getWeather() {
         const iconCode = data.weather[0].icon;
 
         const iconElement = document.getElementById("weather-icon");
-        iconElement.src = `https://openweathermap.org/img/wn/${iconCode}.png`;
+        iconElement.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         iconElement.alt = description;
         iconElement.loading = "lazy";
 
