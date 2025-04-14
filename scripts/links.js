@@ -15,13 +15,20 @@ async function getLinks() {
 
 // Display the links dynamically in the Learning Activities section
 function displayLinks(data) {
-    const learningActivitiesList = document.querySelector('.learning-activities ul');
-    learningActivitiesList.innerHTML = ''; // Clear current list
+    const learningActivitiesContainer = document.querySelector('.learning-activities');
+    learningActivitiesContainer.innerHTML = ''; // Clear current content
 
     data.weeks.forEach(week => {
+        // Create card for each week
+        const weekCard = document.createElement('div');
+        weekCard.classList.add('week-card');
+
+        // Week title
         const weekTitle = document.createElement('h3');
         weekTitle.textContent = week.week;
-        learningActivitiesList.appendChild(weekTitle);
+
+        // Create ul for links
+        const weekList = document.createElement('ul');
 
         week.links.forEach(link => {
             const listItem = document.createElement('li');
@@ -29,8 +36,15 @@ function displayLinks(data) {
             anchor.href = baseURL + link.url;
             anchor.textContent = link.title;
             listItem.appendChild(anchor);
-            learningActivitiesList.appendChild(listItem);
+            weekList.appendChild(listItem);
         });
+
+        // Append all to week card
+        weekCard.appendChild(weekTitle);
+        weekCard.appendChild(weekList);
+
+        // Add card to the learning activities container
+        learningActivitiesContainer.appendChild(weekCard);
     });
 }
 
