@@ -21,8 +21,53 @@
           "title": "Design Principles"
         }
       ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        {
+          "url": "week03/images/landscape.webp",
+          "title": "WebP Image"
+        },
+        {
+          "url": "week03/responsive-images.html",
+          "title": "Responsive Images"
+        },
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazy Load"
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "https://oraclegods.github.io/wdd230/week04/tablebuild.html",
+          "title": "Table Build"
+        },
+        {
+          "url": "https://codepen.io/Oraclegods/pen/oggvjEv",
+          "title": "Pseudo-element"
+        },
+        {
+          "url": "https://github.com/Oraclegods/wdd230/blob/main/week04/Images/w3schools.png",
+          "title": "W3Schools Badge"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "https://oraclegods.github.io/wdd230/week05/prophets.html",
+          "title": "Prophets"
+        },
+        {
+          "url": "https://github.com/Oraclegods/wdd230/blob/main/week05/new-ward-members.json",
+          "title": "JSON File"
+        }
+      ]
     }
-    // Repeat for Weeks 3–5
   ]
 }
-
