@@ -74,6 +74,51 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* --------------------------------------------- */
+/* ✅ NEW: Styles for weekly learning activities */
+/* --------------------------------------------- */
+
+.learning-activities {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.learning-activities h3 {
+    margin-top: 25px;
+    color: #0047AB;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #0047AB;
+    padding-bottom: 5px;
+}
+
+.learning-activities ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.learning-activities li {
+    margin: 8px 0;
+}
+
+.learning-activities a {
+    color: #1c3d5a !important;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.learning-activities a:hover {
+    color: #003580 !important;
+    text-decoration: underline;
+}
+
+
+
+
+
 /* Hero section */
 .hero {
     position: relative;
