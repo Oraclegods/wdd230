@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error("Error fetching members.json:", error);
             }
         }
+   console.log("Directory page script loaded");
 
         // Load member data
         loadMembers();
