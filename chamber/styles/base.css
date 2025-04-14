@@ -283,6 +283,49 @@ img[lazy="true"].loaded {
     }
 }
 
+/* dirctory starts here */
+.view-toggle {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.view-toggle .active {
+    background-color: #007bff;
+    color: white;
+}
+
+#members-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#members-container.list {
+    display: block;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.member-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+/* directory ends here */
+
 /* Footer */
 footer {
     background-color: #004080;
