@@ -1,6 +1,6 @@
 // Define base URL and links.json URL
 const baseURL = "https://oraclegods.github.io/wdd230/";
-const linksURL = "https://oraclegods.github.io/wdd230/data/links.json";
+const linksURL = "data/links.json";
 
 // Fetch and display the weather data
 async function getWeather() {
