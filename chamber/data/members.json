@@ -1,1 +1,59 @@
+[
+    {
+        "name": "Tech Solutions Inc.",
+        "address": "12 Tech Street, Ibadan",
+        "phone": "0801 234 5678",
+        "website": "https://techsolutions.com",
+        "image": "tech_solutions.jpg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Green Energy Co.",
+        "address": "45 Solar Way, Ibadan",
+        "phone": "0802 345 6789",
+        "website": "https://greenenergy.com",
+        "image": "green_energy.jpg",
+        "membership": "Silver"
+    },
+    {
+        "name": "Local Cafe Chain",
+        "address": "89 Coffee Blvd, Ibadan",
+        "phone": "0803 456 7890",
+        "website": "https://localcafe.com",
+        "image": "local_cafe.jpg",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Sunshine Realtors",
+        "address": "7 Estate Drive, Ibadan",
+        "phone": "0804 567 8901",
+        "website": "https://sunshinerealtors.com",
+        "image": "sunshine_realtors.jpg",
+        "membership": "Silver"
+    },
+    {
+        "name": "FreshMart",
+        "address": "20 Market Road, Ibadan",
+        "phone": "0805 678 9012",
+        "website": "https://freshmart.com",
+        "image": "freshmart.jpg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Ibadan Tech Hub",
+        "address": "3 Innovation Park, Ibadan",
+        "phone": "0806 789 0123",
+        "website": "https://ibadantechhub.com",
+        "image": "ibadan_tech_hub.jpg",
+        "membership": "Platinum"
+    },
+    {
+        "name": "Fashion Forward",
+        "address": "55 Style Lane, Ibadan",
+        "phone": "0807 890 1234",
+        "website": "https://fashionforward.com",
+        "image": "fashion_forward.jpg",
+        "membership": "Bronze"
+    }
+]
 
