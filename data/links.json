@@ -1,1 +1,28 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        {
+          "url": "week01/holygrail.html",
+          "title": "HG Layout"
+        },
+        {
+          "url": "week01/media-query.html",
+          "title": "mQueries"
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "week02/design-principles.html",
+          "title": "Design Principles"
+        }
+      ]
+    }
+    // Repeat for Weeks 3–5
+  ]
+}
 
