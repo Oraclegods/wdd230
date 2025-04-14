@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibadan Chamber of Commerce - Supporting businesses in Ibadan with networking, events, and resources.">
+    <meta name="author" content="Folusho Sanni">
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/Ibadan_Town_Hall.jpg">
+    <meta property="og:url" content="https://ibadanchamber.com">
+    <title>Ibadan Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+   
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/ibadan_logo.png" alt="Ibadan Chamber of Commerce Logo">
+        </div>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://oraclegods.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="https://oraclegods.github.io/wdd230/chamber/join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section class="view-toggle">
+        <button id="grid-view" class="active">🔳 Grid View</button>
+        <button id="list-view">📃 List View</button>
+    </section>
+
+    <section id="members-container" class="grid"></section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>123 Business Ave, Ibadan, Nigeria</p>
+            <p>Email: info@chamber.com</p>
+        </div>
+        <div class="developer-info">
+            <p>Project by Folusho Sanni for WDD 230</p>
+            <p>Last updated: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+  <script src="Scripts/chamberold.js"></script>
+</body>
+</html>
