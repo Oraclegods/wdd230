@@ -4,7 +4,7 @@
         "address": "12 Tech Street, Ibadan",
         "phone": "0801 234 5678",
         "website": "https://techsolutions.com",
-        "image": "chamber/Images/name_1.png",
+        "image": "Images/name_1.png",
         "membership": "Gold"
     },
     {
@@ -12,7 +12,7 @@
         "address": "45 Solar Way, Ibadan",
         "phone": "0802 345 6789",
         "website": "https://greenenergy.com",
-        "image": "chamber/Images/name_2.png",
+        "image": "Images/name_2.png",
         "membership": "Silver"
     },
     {
@@ -20,7 +20,7 @@
         "address": "89 Coffee Blvd, Ibadan",
         "phone": "0803 456 7890",
         "website": "https://localcafe.com",
-        "image": "chamber/Images/name_3.png",
+        "image": "Images/name_3.png",
         "membership": "Bronze"
     },
     {
@@ -28,7 +28,7 @@
         "address": "7 Estate Drive, Ibadan",
         "phone": "0804 567 8901",
         "website": "https://sunshinerealtors.com",
-        "image": "chamber/Images/name_4.png",
+        "image": "Images/name_4.png",
         "membership": "Silver"
     },
     {
@@ -36,7 +36,7 @@
         "address": "20 Market Road, Ibadan",
         "phone": "0805 678 9012",
         "website": "https://freshmart.com",
-        "image": "chamber/Images/name_5.png",
+        "image": "Images/name_5.png",
         "membership": "Gold"
     },
     {
@@ -44,7 +44,7 @@
         "address": "3 Innovation Park, Ibadan",
         "phone": "0806 789 0123",
         "website": "https://ibadantechhub.com",
-        "image": "chamber/Images/name_6.png",
+        "image": "Images/name_6.png",
         "membership": "Platinum"
     },
     {
@@ -52,7 +52,7 @@
         "address": "55 Style Lane, Ibadan",
         "phone": "0807 890 1234",
         "website": "https://fashionforward.com",
-        "image": "chamber/Images/name_7.png",
+        "image": "Images/name_7.png",
         "membership": "Bronze"
     }
 ]
