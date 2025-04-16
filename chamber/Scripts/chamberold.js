@@ -42,7 +42,7 @@ function showBanner() {
 showBanner();
 
 // ✅ WEATHER + FORECAST
-const weatherURL = "https://api.openweathermap.org/data/2.5/forecast?q=Aba,NG&appid=433ee5fedb5d48451333629dd4f54d48&units=metric";
+const weatherURL = "https://api.openweathermap.org/data/2.5/forecast?q=Ibadan,NG&appid=433ee5fedb5d48451333629dd4f54d48&units=metric";
 
 async function getWeather() {
     try {
