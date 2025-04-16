@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ibadan Chamber of Commerce Memebers directory- shwoing the details of our memebers.">
+    <meta name="description" content="Ibadan Chamber of Commerce Members directory - showing the details of our members.">
     <meta name="author" content="Folusho Sanni">
+
+    <!-- Open Graph Tags -->
     <meta property="og:title" content="Ibadan Chamber of Commerce Directory">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="<meta property="og:image" content="https://oraclegods.github.io/wdd230/chamber/images/Ibadan_Town_Hall.jpg">
-">
+    <meta property="og:image" content="https://oraclegods.github.io/wdd230/chamber/images/Ibadan_Town_Hall.jpg">
     <meta property="og:url" content="https://ibadanchamber.com">
-    <title>Ibadan Chamber of Commerce Directory</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <title>Ibadan Chamber of Commerce Directory</title>
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-   
-
 </head>
 <body>
     <header>
@@ -35,16 +36,16 @@
     </header>
 
     <main>
-  <section class="view-toggle">
-    <h2 class="visually-hidden">Toggle Member View</h2>
-    <button id="grid-view" class="active">🔳 Grid View</button>
-    <button id="list-view">📃 List View</button>
-  </section>
+        <section class="view-toggle">
+            <h2 class="visually-hidden">Toggle Member View</h2>
+            <button id="grid-view" class="active">🔳 Grid View</button>
+            <button id="list-view">📃 List View</button>
+        </section>
 
-  <section id="members-container" class="grid">
-    <h2 class="visually-hidden">Member Directory</h2>
-    <!-- JS will populate this -->
-  </section>
+        <section id="members-container" class="grid">
+            <h2 class="visually-hidden">Member Directory</h2>
+            <!-- JS will populate this -->
+        </section>
     </main>
 
     <footer>
@@ -58,6 +59,7 @@
             <p>Last updated: <span id="last-modified"></span></p>
         </div>
     </footer>
-  <script src="Scripts/chamber.js"></script>
+
+    <script src="Scripts/chamber.js"></script>
 </body>
 </html>
