@@ -33,115 +33,104 @@ nav ul li a {
     font-weight: bold;
 }
 
-
 .menu-toggle {
-  display: none; /* Hide by default */
+    display: none;
 }
 
-/* Show only on screens smaller than 768px (typical mobile size) */
 @media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Show only on small screens */
-  }
-.nav-menu.show {
-    display: block; /* Show when the menu is toggled */
-  }
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu.show {
+        display: block;
+    }
 }
 
-/*starts joins here */
-
-/* Full-height centering setup */
+/*starts joins here*/
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
 
 .membership-container h1 {
-  text-align: center;
-  margin-bottom: 1rem; /* optional spacing below the heading */
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-/* Membership Container - Centered both vertically and horizontally */
 .membership-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;        /* Full viewport height */
-  padding: 2rem 1rem;
-  box-sizing: border-box;
-  background-color: #f5f5f5; /* optional background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
-/* Membership Form Box */
 .membership-form {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  width: 60vw;
-  max-width: 800px;
-  min-width: 320px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 60vw;
+    max-width: 800px;
+    min-width: 320px;
 }
 
-/* Form Elements: Labels and Inputs */
 .membership-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .membership-form input,
 .membership-form select,
 .membership-form textarea {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-/* Make Textarea Full Height */
 .membership-form textarea#description {
-  min-height: 150px;
-  resize: vertical;
+    min-height: 150px;
+    resize: vertical;
 }
 
-/* Membership Benefits Styling */
 #membershipBenefits {
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-radius: 6px;
-  margin-top: 1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
 }
 
 #membershipBenefits ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #membershipBenefits li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
-  .membership-form {
-    width: 90vw;
-    padding: 1rem;
-  }
+    .membership-form {
+        width: 90vw;
+        padding: 1rem;
+    }
 
-  .membership-container {
-    padding: 1rem;
-  }
+    .membership-container {
+        padding: 1rem;
+    }
 }
-
 /* ends joins here */
 
 /* Hero Section with Background Image */
@@ -157,9 +146,8 @@ html, body {
     height: 400px;
 }
 
-
 .hero h1, .hero p {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -221,7 +209,6 @@ html, body {
     padding: 20px;
 }
 
-/* Sidebar */
 .sidebar {
     background: white;
     padding: 1.5rem;
@@ -234,7 +221,6 @@ html, body {
     text-align: center;
 }
 
-/* Visit Message */
 .visit-message {
     font-weight: bold;
     text-align: center;
@@ -256,7 +242,6 @@ html, body {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Hover Effect (Desktop Only) */
 @media (min-width: 768px) {
     .gallery img:hover {
         transform: scale(1.05);
@@ -264,7 +249,6 @@ html, body {
     }
 }
 
-/* Lazy Loading */
 img[lazy="true"] {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -274,12 +258,11 @@ img[lazy="true"].loaded {
     opacity: 1;
 }
 
-/* Responsive: Stack elements on smaller screens */
 @media (max-width: 768px) {
     .updates-grid,
     .spotlights,
     .discover-grid {
-        grid-template-columns: 1fr; /* Stack elements */
+        grid-template-columns: 1fr;
     }
 }
 
@@ -290,11 +273,11 @@ img[lazy="true"].loaded {
 }
 
 .visually-hidden {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .view-toggle button {
@@ -320,17 +303,39 @@ img[lazy="true"].loaded {
     display: block;
 }
 
+/* Card styles for both views */
 .member-card {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 8px;
     background-color: #f9f9f9;
+    margin-bottom: 1rem;
 }
 
+/* Default: image full width for grid view */
 .member-card img {
     width: 100%;
     max-height: 150px;
     object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Enhanced layout for LIST view */
+#members-container.list .member-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#members-container.list .member-card img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+#members-container.list .member-card > *:not(img) {
+    flex: 1;
 }
 /* directory ends here */
 
