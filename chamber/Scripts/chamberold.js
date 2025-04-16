@@ -26,7 +26,7 @@ if (visitMessage) {
 function showBanner() {
     const banner = document.querySelector("#meet-banner");
     const dismissed = localStorage.getItem("bannerClosed");
-    const today = new Date().getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    const today = new Date().getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
 
     if ((today >= 1 && today <= 3) && !dismissed && banner) {
         banner.style.display = "block";
@@ -87,8 +87,8 @@ async function getSpotlightMembers() {
         const response = await fetch("data/members.json");
         const data = await response.json();
 
-        const qualified = data.members.filter(member =>
-            member.membershipLevel === "Gold" || member.membershipLevel === "Silver"
+        const qualified = data.filter(member =>
+            member.membership === "Gold" || member.membership === "Silver"
         );
 
         const shuffled = qualified.sort(() => 0.5 - Math.random());
@@ -101,9 +101,11 @@ async function getSpotlightMembers() {
                 const card = document.createElement("section");
                 card.classList.add("spotlight");
                 card.innerHTML = `
-                    <img src="${member.image}" alt="${member.name} logo" loading="lazy">
+                    <img src="${member.image}" alt="${member.name} logo" loading="lazy" onerror="this.src='images/default.png'">
                     <h3>${member.name}</h3>
-                    <p>${member.description}</p>
+                    <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
                 `;
                 container.appendChild(card);
             });
