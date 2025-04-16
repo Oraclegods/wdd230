@@ -1,35 +1,48 @@
-// Update Last Modified
-document.getElementById("last-modified").textContent = document.lastModified;
-
-// LocalStorage for visit tracking
-const lastVisit = localStorage.getItem("lastVisit");
-const now = Date.now();
-const visitMessage = document.getElementById("visit-message");
-
-if (visitMessage) {
-    if (!lastVisit) {
-        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        const lastVisitTime = parseInt(lastVisit, 10);
-        const daysSinceLastVisit = Math.floor((now - lastVisitTime) / (1000 * 60 * 60 * 24));
-
-        if (daysSinceLastVisit < 1) {
-            visitMessage.textContent = "Back so soon! Awesome!";
-        } else {
-            visitMessage.textContent = `You last visited ${daysSinceLastVisit} ${daysSinceLastVisit === 1 ? "day" : "days"} ago.`;
-        }
-    }
-    localStorage.setItem("lastVisit", now);
-}
-
-// Set the current timestamp for the form on 'join.html'
+// Wait for DOM to fully load
 document.addEventListener('DOMContentLoaded', () => {
+
+    // ==========================
+    // 1. Last Modified Date
+    // ==========================
+    const lastModified = document.getElementById("last-modified");
+    if (lastModified) {
+        lastModified.textContent = document.lastModified;
+    }
+
+    // ==========================
+    // 2. Visit Tracker (LocalStorage)
+    // ==========================
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = Date.now();
+    const visitMessage = document.getElementById("visit-message");
+
+    if (visitMessage) {
+        if (!lastVisit) {
+            visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+        } else {
+            const lastVisitTime = parseInt(lastVisit, 10);
+            const daysSinceLastVisit = Math.floor((now - lastVisitTime) / (1000 * 60 * 60 * 24));
+
+            if (daysSinceLastVisit < 1) {
+                visitMessage.textContent = "Back so soon! Awesome!";
+            } else {
+                visitMessage.textContent = `You last visited ${daysSinceLastVisit} ${daysSinceLastVisit === 1 ? "day" : "days"} ago.`;
+            }
+        }
+        localStorage.setItem("lastVisit", now);
+    }
+
+    // ==========================
+    // 3. Join Form Timestamp
+    // ==========================
     const timestampInput = document.getElementById('timestamp');
     if (timestampInput) {
         timestampInput.value = new Date().toISOString();
     }
 
-    // --- Directory Page Logic ---
+    // ==========================
+    // 4. Directory Page Logic
+    // ==========================
     const container = document.getElementById("members-container");
     const gridBtn = document.getElementById("grid-view");
     const listBtn = document.getElementById("list-view");
@@ -63,12 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        console.log("Directory page script loaded");
-
-        // Load member data
+        // Load members from JSON
         loadMembers();
 
-        // View Toggle
+        // Grid/List toggle functionality
         if (gridBtn && listBtn) {
             gridBtn.addEventListener("click", () => {
                 container.classList.add("grid");
@@ -85,4 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // ==========================
+    // 5. Mobile Menu Toggle
+    // ==========================
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    }
+
 });
