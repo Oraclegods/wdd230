@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ibadan Chamber of Commerce - Supporting businesses in Ibadan with networking, events, and resources.">
-    <meta name="author" content="Folusho Sanni">
-    <meta property="og:title" content="Ibadan Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="Images/Ibadan_Town_Hall.jpg">
-    <meta property="og:url" content="https://ibadanchamber.com">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ibadan Chamber of Commerce - Supporting businesses in Ibadan with networking, events, and resources." />
+    <meta name="author" content="Folusho Sanni" />
+    <meta property="og:title" content="Ibadan Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="Images/Ibadan_Town_Hall.jpg" />
+    <meta property="og:url" content="https://ibadanchamber.com" />
     <title>Ibadan Chamber of Commerce</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-   
-
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 </head>
 <body>
+    <!-- Meet & Greet Banner (Mon–Wed only) -->
+    <div id="meet-banner" class="banner" style="display: none;">
+        <p>Join us for a Chamber of Commerce meet and greet on Wednesday at 7:00 p.m!</p>
+        <button id="close-banner" aria-label="Close banner">❌</button>
+    </div>
+
     <header>
         <div class="logo">
-            <img src="Images/ibadan_logo.png" alt="Ibadan Chamber of Commerce Logo">
+            <img src="Images/ibadan_logo.png" alt="Ibadan Chamber of Commerce Logo" />
         </div>
         <nav>
             <button class="menu-toggle">☰</button>
@@ -34,19 +38,22 @@
     </header>
 
     <main>
-        <!-- Hero Section with Background Image -->
+        <!-- Hero Section -->
         <section class="hero">
             <h1>Welcome to Ibadan City Chamber of Commerce</h1>
             <p>Promoting business growth and community development in Ibadan.</p>
             <a href="join.html" class="cta-button">Join Now</a>
         </section>
 
-        <!-- Weather and Community Updates in a Responsive Grid -->
+        <!-- Weather and Community Updates -->
         <section class="updates-grid">
             <div class="weather">
                 <h2>Weather Update</h2>
-                <p>72°F - Sunny with light breeze</p>
+                <p><strong>Temp:</strong> <span id="current-temp">--</span></p>
+                <p><strong>Description:</strong> <span id="weather-description">--</span></p>
+                <div id="forecast" class="forecast"></div>
             </div>
+
             <div class="current-events">
                 <h2>Community Updates</h2>
                 <ul>
@@ -56,22 +63,11 @@
             </div>
         </section>
 
-        <!-- Business Updates Section -->
+        <!-- Business Spotlights -->
         <section class="business-updates">
-            <h1>Business Updates</h1>
-            <div class="spotlights">
-                <div class="spotlight">
-                    <h3>Tech Solutions Inc.</h3>
-                    <p>Leading IT services provider in the region</p>
-                </div>
-                <div class="spotlight">
-                    <h3>Green Energy Co.</h3>
-                    <p>Sustainable energy solutions</p>
-                </div>
-                <div class="spotlight">
-                    <h3>Local Cafe Chain</h3>
-                    <p>Your neighborhood coffee destination</p>
-                </div>
+            <h2>Member Spotlights</h2>
+            <div id="spotlights" class="spotlights">
+                <!-- JS will populate spotlight ads dynamically -->
             </div>
         </section>
     </main>
@@ -87,6 +83,7 @@
             <p>Last updated: <span id="last-modified"></span></p>
         </div>
     </footer>
-  <script src="Scripts/chamberold.js"></script>
+
+    <script src="Scripts/chamberold.js" defer></script>
 </body>
 </html>
